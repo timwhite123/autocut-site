@@ -15,12 +15,12 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Effective October 2, 2026</p>
+<p class="meta">Effective October 2, 2026. Updated October 6, 2026: teleprompter scripts.</p>
 
 <p>AutoCut is an iPhone app made by Timothy White ("we", "us"). This policy explains what AutoCut collects, why, who processes it, and the choices you have.</p>
 
 <div class="callout">
-<p><strong>The short version.</strong> Your videos never leave your iPhone. If you turn on AI editing, only the audio of a take is sent to work out the cut, and it's deleted as soon as the edit is ready. We don't sell your data, we don't show ads, we don't track you across apps, and your content is never used to train AI models.</p>
+<p><strong>The short version.</strong> Your videos never leave your iPhone. If you turn on AI editing, only the audio of a take (and, for takes recorded with AutoCut's teleprompter, the script you read) is sent to work out the cut, and both are deleted as soon as the edit is ready. We don't sell your data, we don't show ads, we don't track you across apps, and your content is never used to train AI models.</p>
 </div>
 
 <h2>What stays on your iPhone</h2>
@@ -30,21 +30,22 @@
 <ul>
   <li><strong>Account.</strong> When you sign in with Apple we receive a stable account identifier from Apple. If you choose to share it, Apple may also give us your email or a private relay address. We use it only to run your account.</li>
   <li><strong>Analysis audio (only with AI editing on).</strong> For each video you edit, a compressed copy of its audio track (no video) is uploaded, together with the video's length and a random project identifier. Video names and other project details are not uploaded.</li>
+  <li><strong>Teleprompter script (only with AI editing on).</strong> If you record a take with AutoCut's teleprompter, the script you read is sent with that take's audio, so the cut can follow what you meant to say. Scripts you only keep in the teleprompter aren't uploaded.</li>
   <li><strong>Transcript and edit decisions.</strong> Our servers turn that audio into a word-by-word transcript, then decide which words, pauses and repeated takes to cut. Your iPhone downloads the result and applies it.</li>
   <li><strong>Subscription records.</strong> If you subscribe, we receive Apple's signed record of the purchase (product, dates, trial status, renewal status) so we can unlock Pro features and apply plan limits. We never see your payment details.</li>
   <li><strong>Usage counts.</strong> The number and length of analyses you run, to enforce plan limits.</li>
-  <li><strong>Security logs.</strong> Short-lived technical records such as request times and error codes, used to keep the service working and prevent abuse. They don't contain your audio, transcripts or video.</li>
+  <li><strong>Security logs.</strong> Short-lived technical records such as request times and error codes, used to keep the service working and prevent abuse. They don't contain your audio, scripts, transcripts or video.</li>
 </ul>
 <p>AutoCut doesn't use advertising or analytics SDKs, and doesn't access your contacts, location or other apps. The camera, microphone and photo library are used only to record and import the videos you choose.</p>
 
 <h2>AI editing and who processes your audio</h2>
 <p>AI editing is optional. AutoCut asks before turning it on, and you can turn it off at any time in the menu under your account. With it off, AutoCut edits on your iPhone only and nothing about your videos is uploaded.</p>
-<p>With it on, your analysis audio and transcript are processed by these service providers on our behalf:</p>
+<p>With it on, your analysis audio, teleprompter script and transcript are processed by these service providers on our behalf:</p>
 <ul>
   <li><strong>Supabase</strong>: hosts our database, sign-in and temporary audio storage.</li>
   <li><strong>OpenRouter</strong>: routes requests to the AI models below. We use zero-data-retention routing, which means providers that don't store your requests and don't use them for training.</li>
   <li><strong>Microsoft</strong>: an AI speech model turns the audio into a transcript.</li>
-  <li><strong>Anthropic</strong>: an AI language model reads the transcript and suggests what to cut.</li>
+  <li><strong>Anthropic</strong>: an AI language model reads the transcript (and script, if any) and suggests what to cut.</li>
   <li><strong>Apple</strong>: Sign in with Apple and App Store payments.</li>
 </ul>
 <p>These providers process data only to provide their service to us. Your content is never used to train AI models, by us or by them. Data may be processed in the United States and other countries where these providers operate.</p>
@@ -52,6 +53,7 @@
 <h2>How long we keep it</h2>
 <ul>
   <li><strong>Analysis audio</strong>: deleted as soon as the analysis finishes or fails.</li>
+  <li><strong>Teleprompter scripts</strong>: deleted as soon as the analysis finishes or fails, and within a day in any case.</li>
   <li><strong>Transcripts</strong>: deleted 30 days after the analysis finishes, or straight away when you delete the project or your account.</li>
   <li><strong>Edit decisions</strong>: kept until you delete the project or your account.</li>
   <li><strong>Usage counts</strong>: kept until you delete your account.</li>
